@@ -4,7 +4,7 @@
 A modern, responsive resume website built as part of the Web Development module. This project showcases a blend of **Economics, Data Science, and Finance** through a clean digital interface.
 
 ## 🚀 Live Demo
-**[Insert Your GitHub Pages Link Here]**
+**[https://thoioyou.github.io/Resume-Website/](Link To Resume Website)**
 
 ## ✨ Features
 * **Semantic Structure:** Built using HTML5 semantic elements (`<header>`, `<section>`, `<article>`, `<footer>`) for better SEO and accessibility.
