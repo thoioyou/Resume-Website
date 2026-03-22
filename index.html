@@ -1,80 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubhank | Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shubhank Srivastava</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">Shubhank</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
+
+  <!-- CURSOR DOT -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-index">001</span>
+    <span class="nav-name">Shubhank Srivastava</span>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger"><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work" class="ml">Work</a>
+    <a href="#projects" class="ml">Projects</a>
+    <a href="#education" class="ml">Education</a>
+    <a href="#contact" class="ml">Contact</a>
+  </div>
+
+  <!-- HERO — editorial masthead style -->
+  <header class="hero">
+
+    <!-- Top row: eyebrow -->
+    <div class="hero-eyebrow">
+      <span class="hero-year">2025</span>
+      <span class="hero-divline"></span>
+      <span class="hero-loc">Bengaluru, IN</span>
+    </div>
+
+    <!-- Giant name -->
+    <div class="hero-title-block">
+      <h1 class="hero-name">
+        <span class="hn-line" style="--d:0.2s">Shubhank</span>
+        <span class="hn-line hn-indent" style="--d:0.4s">Srivastava</span>
+      </h1>
+    </div>
+
+    <!-- Middle tagline — fills the empty space -->
+    <div class="hero-mid">
+      <div class="hero-mid-left">
+        <p class="hero-descriptor">Economics &amp; Digital Business student.<br>Finance. Data. Visual Design.</p>
+        <p class="hero-descriptor-sub">Dual degree — IIMB &amp; St. Joseph's College of Commerce</p>
+      </div>
+      <div class="hero-mid-right">
+        <div class="hero-role-strip">
+          <span class="role-scroll">
+            Economics &nbsp;&nbsp;/&nbsp;&nbsp; Digital Business &nbsp;&nbsp;/&nbsp;&nbsp; Data Science &nbsp;&nbsp;/&nbsp;&nbsp; Visual Design &nbsp;&nbsp;/&nbsp;&nbsp; Financial Modelling &nbsp;&nbsp;/&nbsp;&nbsp; NLP &nbsp;&nbsp;/&nbsp;&nbsp; UI/UX &nbsp;&nbsp;/&nbsp;&nbsp;
+            Economics &nbsp;&nbsp;/&nbsp;&nbsp; Digital Business &nbsp;&nbsp;/&nbsp;&nbsp; Data Science &nbsp;&nbsp;/&nbsp;&nbsp; Visual Design &nbsp;&nbsp;/&nbsp;&nbsp; Financial Modelling &nbsp;&nbsp;/&nbsp;&nbsp; NLP &nbsp;&nbsp;/&nbsp;&nbsp; UI/UX &nbsp;&nbsp;/&nbsp;&nbsp;
+          </span>
         </div>
-    </nav>
+      </div>
+    </div>
 
-    <header>
-        <div class="header-content">
-            <h1>Shubhank</h1>
-            <p class="tagline">Data Science | Economics | Digital Business</p>
-            <p class="objective">Pursuing a dual degree in Digital Business & Entrepreneurship (IIMB) and Economics & Data Analytics (SJCC). Focused on the intersection of quantitative finance and machine learning.</p>
+    <!-- Bottom row: bio + numbers -->
+    <div class="hero-bottom">
+      <p class="hero-bio">
+        Undergraduate student pursuing dual degrees in Economics and Digital Business,
+        with practical experience spanning finance, brand communication, and visual design.
+        Currently leading a 20-member media team at St. Joseph's College of Commerce.
+      </p>
+      <div class="hero-numbers">
+        <div class="hnum">
+          <span class="hnum-n">20</span>
+          <span class="hnum-l">Team<br>Members</span>
         </div>
-    </header>
+        <div class="hnum">
+          <span class="hnum-n">2</span>
+          <span class="hnum-l">Degrees<br>Pursuing</span>
+        </div>
+        <div class="hnum">
+          <span class="hnum-n">2</span>
+          <span class="hnum-l">Research &amp;<br>Projects</span>
+        </div>
+      </div>
+    </div>
 
-    <main>
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <article class="card">
-                <h3>Finance Intern</h3>
-                <p class="meta">Sri Ramana Maharshi Trust | Oct 2025</p>
-                <ul>
-                    <li>Assisted in financial modeling and data management.</li>
-                </ul>
-            </article>
-        </section>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="grid">
-                <article class="card">
-                    <h3>StockBrain Pro</h3>
-                    <p>AI-integrated dashboard for real-time market sentiment analysis.</p>
-                </article>
-                <article class="card">
-                    <h3>Macro-Risk Engine</h3>
-                    <p>Risk-modeling tool for analyzing global economic volatility.</p>
-                </article>
-            </div>
-        </section>
+  <!-- SKILLS — horizontal full-width strips -->
+  <section class="skills-strip-section">
+    <div class="strip-label">Skills &amp; Tools</div>
+    <div class="strips">
+      <div class="strip reveal-up">
+        <div class="strip-cat">Finance &amp; Economics</div>
+        <div class="strip-items">
+          <span>Quantitative Methods</span>
+          <span>Financial Modelling</span>
+          <span>Macro &amp; Microeconomics</span>
+          <span>Policy Analysis</span>
+        </div>
+      </div>
+      <div class="strip reveal-up" style="--d:.08s">
+        <div class="strip-cat">Data Science &amp; Tech</div>
+        <div class="strip-items">
+          <span>Python</span>
+          <span>Streamlit</span>
+          <span>Pandas</span>
+          <span>Power BI</span>
+          <span>Advanced Excel</span>
+          <span>Machine Learning </span>
+        </div>
+      </div>
+      <div class="strip reveal-up" style="--d:.16s">
+        <div class="strip-cat">Creative &amp; Media</div>
+        <div class="strip-items">
+          <span>Photoshop</span>
+          <span>Canva</span>
+          <span>DaVinci Resolve</span>
+          <span>Motion Graphics</span>
+          <span>Figma</span>
+          <span>UI/UX Design</span>
+        </div>
+      </div>
+    </div>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <table>
-                <tr>
-                    <th>Category</th>
-                    <th>Tools</th>
-                </tr>
-                <tr>
-                    <td>Programming</td>
-                    <td>Python, HTML/CSS</td>
-                </tr>
-                <tr>
-                    <td>Analytics</td>
-                    <td>Economics, Data Preprocessing</td>
-                </tr>
-            </table>
-        </section>
-    </main>
+    <!-- Proficiency table -->
+    <div class="prof-table reveal-up" style="--d:.1s">
+      <div class="pt-head">
+        <span>Tool</span>
+        <span>Category</span>
+        <span>Proficiency</span>
+      </div>
+      <div class="pt-row"><span>Python (Streamlit, Pandas)</span><span>Programming</span><div class="pt-bar"><div style="width:80%"></div></div></div>
+      <div class="pt-row"><span>Advanced Excel</span><span>Finance</span><div class="pt-bar"><div style="width:90%"></div></div></div>
+      <div class="pt-row"><span>Power BI</span><span>Data Analytics</span><div class="pt-bar"><div style="width:65%"></div></div></div>
+      <div class="pt-row"><span>Financial Modelling</span><span>Finance</span><div class="pt-bar"><div style="width:70%"></div></div></div>
+      <div class="pt-row"><span>Figma</span><span>UI/UX</span><div class="pt-bar"><div style="width:68%"></div></div></div>
+      <div class="pt-row"><span>DaVinci Resolve</span><span>Video Editing</span><div class="pt-bar"><div style="width:82%"></div></div></div>
+      <div class="pt-row"><span>Photoshop / Canva</span><span>Visual Design</span><div class="pt-bar"><div style="width:88%"></div></div></div>
+      <div class="pt-row"><span>Machine Learning </span><span>Data Science</span><div class="pt-bar"><div style="width:60%"></div></div></div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 Shubhank. Head of Media & Tech Team, SJCC Economics.</p>
-    </footer>
+  <!-- EXPERIENCE — large editorial layout -->
+  <section class="exp-section" id="work">
+    <div class="exp-header">
+      <span class="sec-index">002</span>
+      <h2 class="sec-title">Experience</h2>
+    </div>
+
+    <div class="exp-item reveal-up">
+      <div class="exp-meta">
+        <span class="exp-date">AY 2025–26</span>
+        <span class="exp-co">St. Joseph's College of Commerce</span>
+      </div>
+      <div class="exp-body">
+        <h3 class="exp-role">Media &amp; Tech<br>Team Head</h3>
+        <ul class="exp-list">
+          <li>Leading a 20-member team responsible for all communication and branding output across the B.Sc. Economics program</li>
+          <li>Overseeing quality and consistency of digital and visual content, from social media assets to event collateral</li>
+        </ul>
+      </div>
+      <div class="exp-num">01</div>
+    </div>
+
+    <div class="exp-divider"></div>
+
+    <div class="exp-item reveal-up" style="--d:.1s">
+      <div class="exp-meta">
+        <span class="exp-date">Oct 2025</span>
+        <span class="exp-co">Sri Ramana Maharshi Trust for Disabled Persons (R)</span>
+      </div>
+      <div class="exp-body">
+        <h3 class="exp-role">Finance<br>Intern</h3>
+        <ul class="exp-list">
+          <li>Supported budgeting, expense tracking, and basic financial analysis for active projects</li>
+          <li>Prepared internal reports, financial summaries, and contributed to cost-efficiency reviews</li>
+        </ul>
+      </div>
+      <div class="exp-num">02</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS — asymmetric large feature layout -->
+  <section class="proj-section" id="projects">
+    <div class="proj-header">
+      <span class="sec-index">003</span>
+      <h2 class="sec-title">Projects &amp; Research</h2>
+    </div>
+
+    <div class="proj-featured reveal-up">
+      <div class="pf-tag">Featured Project</div>
+      <h3 class="pf-title">StockBrain</h3>
+      <p class="pf-desc">Developed a stock sentiment dashboard using natural language processing to analyse live news feeds and detect emerging market patterns. Built end-to-end in Python with a Streamlit interface.</p>
+      <div class="pf-tech">
+        <span>Python</span><span>Streamlit</span><span>NLP</span><span>Pandas</span>
+      </div>
+    </div>
+
+    <div class="proj-side reveal-up" style="--d:.12s">
+      <div class="ps-num">02</div>
+      <div class="ps-content">
+        <div class="ps-tag">Active Research</div>
+        <h3 class="ps-title">Baumol's Cost Disease in the Indian Context</h3>
+        <p class="ps-desc">Investigating the intersection of poverty reduction and cultural preservation within India's labour-intensive sectors. Exploring policy implications at the crossroads of economics and social equity.</p>
+        <div class="ps-tech">
+          <span>Economics</span><span>Policy Research</span><span>Quantitative Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION — split layout -->
+  <section class="edu-section" id="education">
+    <div class="edu-header">
+      <span class="sec-index">004</span>
+      <h2 class="sec-title">Education</h2>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-item reveal-up">
+        <div class="edu-year">2025 — Present</div>
+        <div class="edu-inst">IIMB</div>
+        <div class="edu-full">Indian Institute of Management Bangalore</div>
+        <div class="edu-deg">BBA — Digital Business &amp; Entrepreneurship</div>
+        <p class="edu-note">Digital strategy, entrepreneurship and business innovation at India's premier management institution.</p>
+      </div>
+      <div class="edu-item reveal-up" style="--d:.1s">
+        <div class="edu-year">2024 — Present</div>
+        <div class="edu-inst">SJCC</div>
+        <div class="edu-full">St. Joseph's College of Commerce, Bengaluru</div>
+        <div class="edu-deg">B.Sc. — Economics, Mathematics &amp; Data Analytics</div>
+        <p class="edu-note">Dual-degree track combining quantitative economics, mathematics, and applied data analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section class="act-section">
+    <div class="act-header">
+      <span class="sec-index">005</span>
+      <h2 class="sec-title">Activities</h2>
+    </div>
+    <div class="act-list">
+      <div class="act-item reveal-up">
+        <span class="act-n">01</span>
+        <div class="act-body">
+          <h3>Team Leadership</h3>
+          <p>Heading a 20-member media and tech team, managing creative direction, workflows, and deliverables</p>
+        </div>
+      </div>
+      <div class="act-item reveal-up" style="--d:.07s">
+        <span class="act-n">02</span>
+        <div class="act-body">
+          <h3>Visual Design</h3>
+          <p>Designing social media assets, event collateral, and motion graphics using Photoshop and DaVinci Resolve</p>
+        </div>
+      </div>
+      <div class="act-item reveal-up" style="--d:.14s">
+        <span class="act-n">03</span>
+        <div class="act-body">
+          <h3>Economics Research</h3>
+          <p>Actively researching Baumol's Cost Disease and its implications for Indian labour-intensive sectors</p>
+        </div>
+      </div>
+      <div class="act-item reveal-up" style="--d:.21s">
+        <span class="act-n">04</span>
+        <div class="act-body">
+          <h3>UI/UX &amp; Product</h3>
+          <p>Exploring product design and user experience through Figma prototyping and digital business coursework</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT — large typographic layout -->
+  <section class="contact-section" id="contact">
+    <div class="contact-header">
+      <span class="sec-index">006</span>
+      <h2 class="sec-title">Contact</h2>
+    </div>
+    <div class="contact-big">
+      <a href="mailto:shubhank9999@gmail.com" class="contact-line reveal-up">
+        <span class="cl-label">Email</span>
+        <span class="cl-value">shubhank9999@gmail.com</span>
+        <span class="cl-arrow">↗</span>
+      </a>
+      <a href="tel:+917019372926" class="contact-line reveal-up" style="--d:.06s">
+        <span class="cl-label">Phone</span>
+        <span class="cl-value">+91 70193 72926</span>
+        <span class="cl-arrow">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/shubhank-srivastava-0409a9228/" class="contact-line reveal-up" style="--d:.12s">
+        <span class="cl-label">LinkedIn</span>
+        <span class="cl-value">shubhank-srivastava</span>
+        <span class="cl-arrow">↗</span>
+      </a>
+      <a href="https://github.com/thoioyou" class="contact-line reveal-up" style="--d:.18s">
+        <span class="cl-label">GitHub</span>
+        <span class="cl-value">github.com/thoioyou</span>
+        <span class="cl-arrow">↗</span>
+      </a>
+    </div>
+    <p class="contact-loc">Whitefield, Bangalore, Karnataka — 560067</p>
+  </section>
+
+  <footer class="footer">
+    <span>© 2025 Shubhank Srivastava</span>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('big'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
+    });
+
+    // Scroll reveal
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }});
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal-up, .reveal-line').forEach(el => obs.observe(el));
+
+    // Navbar
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60));
+
+    // Hamburger
+    const hb = document.getElementById('hamburger');
+    const mm = document.getElementById('mobileMenu');
+    hb.addEventListener('click', () => { hb.classList.toggle('open'); mm.classList.toggle('open'); });
+    document.querySelectorAll('.ml').forEach(l => l.addEventListener('click', () => { hb.classList.remove('open'); mm.classList.remove('open'); }));
+
+    // Animate proficiency bars on scroll
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.pt-bar div').forEach(bar => {
+            bar.style.transform = 'scaleX(1)';
+          });
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.prof-table').forEach(t => barObs.observe(t));
+  </script>
 </body>
 </html>
