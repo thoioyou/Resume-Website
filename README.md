@@ -1,34 +1,44 @@
+# Resume Website — CSS Write-up
+**Shubhank Srivastava** · shubhank9999@gmail.com
 
-# Professional Resume Website
+**GitHub Pages:** https://thoioyou.github.io/[your-repo-name]
 
-A modern, responsive resume website built as part of the Web Development module. This project showcases a blend of **Economics, Data Science, and Finance** through a clean digital interface.
+---
 
-## 🚀 Live Demo
-**[https://thoioyou.github.io/Resume-Website/] (Link To Resume Website)**
+## What I Built
 
-## ✨ Features
-* **Semantic Structure:** Built using HTML5 semantic elements (`<header>`, `<section>`, `<article>`, `<footer>`) for better SEO and accessibility.
-* **Sticky Navigation:** A top-fixed navigation bar for seamless browsing between sections.
-* **Project Cards:** A dedicated grid layout for showcasing analytical projects like *StockBrain Pro* and the *Macro-Risk Engine*.
-* **Responsive Tables:** A structured view of technical skills and certifications.
-* **Modern Typography:** Integrated Google Fonts for a professional and readable aesthetic.
+I built my personal resume website using HTML and CSS. Instead of the usual card grid layout, I went with an editorial magazine style — big serif typography, a dark background with an off-white (#e8e6e0) colour scheme, and animated sections that reveal as you scroll.
 
-## 🛠️ Tech Stack
-* **HTML5:** Structure and content organization.
-* **CSS3:** Layout design, Flexbox positioning, and visual styling.
-* **Google Fonts:** Typography enhancement.
+---
 
-## 📂 Project Structure
-* `index.html` - The core structure and content of the resume.
-* `style.css` - Custom styling, including layout positioning and typography.
-* `README.md` - Project documentation.
+## CSS Improvements Made
 
-## 👤 Author
-**Shubhank**
-* BBA in Digital Business & Entrepreneurship (IIM Bangalore)
-* B.Sc. in Economics, Mathematics & Data Analytics (SJCC)
-* Media & Tech Team Head, SJCC Economics Department
+- **Google Fonts** — Imported Playfair Display for headings, DM Mono for labels, and DM Sans for body text. The serif + mono pairing gives it an editorial feel.
 
-2.  **The Link:** Don't forget to replace the `[Insert Your GitHub Pages Link Here]` with your actual URL so your instructor can click it immediately.
+- **CSS Variables** — All colours and fonts defined in `:root` (e.g. `--ink`, `--paper`, `--mid`), keeping the theme consistent without repeating values.
 
-**Would you like me to help you draft the "Brief Write-up" for your PDF submission next?**
+- **position: fixed** — Used for the navbar so it stays pinned to the top while scrolling, with a blur background that fades in after 60px of scroll.
+
+- **Flexbox & CSS Grid** — Flexbox for the navbar, stats row, and contact section. Grid for the hero layout, education columns, and proficiency table.
+
+- **@keyframes animations** — Hero name slides up on load, a role ticker scrolls horizontally at the bottom of the hero, and a scroll hint line pulses on the right.
+
+- **Transitions & hover effects** — Nav links get a sliding underline, cards shift on hover, contact rows indent, and skill tags invert colour — all using `transition`.
+
+- **Scroll reveal** — Sections start at `opacity: 0` and animate into view using `IntersectionObserver` toggling a CSS class.
+
+- **::before pseudo-element** — A giant faint "SS" watermark sits in the hero background to fill the page visually.
+
+- **@media queries** — Two breakpoints (900px and 680px) collapse grids to single column and swap the desktop nav for a hamburger menu. Font sizes scale with `clamp()`.
+
+---
+
+## Semantic HTML Used
+
+`<header>`, `<nav>`, `<section>`, `<article>`, `<footer>` — used throughout instead of generic divs.
+
+---
+
+## What I Learnt
+
+This project taught me more than I expected. Getting the scroll reveal working was the most satisfying part. I also spent a lot of time on typography — pairing fonts and getting the spacing right made the biggest difference to how the site looked overall.
