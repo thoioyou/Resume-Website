@@ -7,7 +7,7 @@
 
 ## What I Built
 
-I built my personal resume website using HTML and CSS. Instead of the usual card grid layout, I went with an editorial magazine style — big serif typography, a dark background with an off-white (#e8e6e0) colour scheme, and animated sections that reveal as you scroll.
+I built my personal resume website using HTML and CSS. Instead of the usual card grid layout, I went with an editorial magazine style  big serif typography, a dark background with an off-white (#e8e6e0) colour scheme, and animated sections that reveal as you scroll.
 
 ---
 
@@ -41,4 +41,4 @@ I built my personal resume website using HTML and CSS. Instead of the usual card
 
 ## What I Learnt
 
-This project taught me more than I expected. Getting the scroll reveal working was the most satisfying part. I also spent a lot of time on typography — pairing fonts and getting the spacing right made the biggest difference to how the site looked overall.
+This project taught me more than I expected. Getting the scroll reveal working was the most satisfying part. I also spent a lot of time on typography  pairing fonts and getting the spacing right made the biggest difference to how the site looked overall.
