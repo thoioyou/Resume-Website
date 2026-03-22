@@ -1,7 +1,7 @@
 # Resume Website — CSS Write-up
 **Shubhank Srivastava** · shubhank9999@gmail.com
 
-**GitHub Pages:** https://thoioyou.github.io/[your-repo-name]
+**GitHub Pages:** https://thoioyou.github.io/Resume-Website
 
 ---
 
