@@ -9,10 +9,9 @@
 </head>
 <body>
 
-  <!-- CURSOR DOT -->
+  
   <div class="cursor" id="cursor"></div>
 
-  <!-- NAV -->
   <nav class="nav">
     <span class="nav-index">001</span>
     <span class="nav-name">Shubhank Srivastava</span>
@@ -32,17 +31,14 @@
     <a href="#contact" class="ml">Contact</a>
   </div>
 
-  <!-- HERO — editorial masthead style -->
   <header class="hero">
 
-    <!-- Top row: eyebrow -->
     <div class="hero-eyebrow">
       <span class="hero-year">2025</span>
       <span class="hero-divline"></span>
       <span class="hero-loc">Bengaluru, IN</span>
     </div>
 
-    <!-- Giant name -->
     <div class="hero-title-block">
       <h1 class="hero-name">
         <span class="hn-line" style="--d:0.2s">Shubhank</span>
@@ -50,7 +46,6 @@
       </h1>
     </div>
 
-    <!-- Middle tagline — fills the empty space -->
     <div class="hero-mid">
       <div class="hero-mid-left">
         <p class="hero-descriptor">Economics &amp; Digital Business student.<br>Finance. Data. Visual Design.</p>
@@ -66,7 +61,6 @@
       </div>
     </div>
 
-    <!-- Bottom row: bio + numbers -->
     <div class="hero-bottom">
       <p class="hero-bio">
         Undergraduate student pursuing dual degrees in Economics and Digital Business,
@@ -95,7 +89,6 @@
     </div>
   </header>
 
-  <!-- SKILLS — horizontal full-width strips -->
   <section class="skills-strip-section">
     <div class="strip-label">Skills &amp; Tools</div>
     <div class="strips">
@@ -132,7 +125,6 @@
       </div>
     </div>
 
-    <!-- Proficiency table -->
     <div class="prof-table reveal-up" style="--d:.1s">
       <div class="pt-head">
         <span>Tool</span>
@@ -150,7 +142,6 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE — large editorial layout -->
   <section class="exp-section" id="work">
     <div class="exp-header">
       <span class="sec-index">002</span>
@@ -190,7 +181,6 @@
     </div>
   </section>
 
-  <!-- PROJECTS — asymmetric large feature layout -->
   <section class="proj-section" id="projects">
     <div class="proj-header">
       <span class="sec-index">003</span>
@@ -219,7 +209,6 @@
     </div>
   </section>
 
-  <!-- EDUCATION — split layout -->
   <section class="edu-section" id="education">
     <div class="edu-header">
       <span class="sec-index">004</span>
@@ -244,7 +233,6 @@
     </div>
   </section>
 
-  <!-- ACTIVITIES -->
   <section class="act-section">
     <div class="act-header">
       <span class="sec-index">005</span>
@@ -282,7 +270,6 @@
     </div>
   </section>
 
-  <!-- CONTACT — large typographic layout -->
   <section class="contact-section" id="contact">
     <div class="contact-header">
       <span class="sec-index">006</span>
@@ -318,7 +305,6 @@
   </footer>
 
   <script>
-    // Custom cursor
     const cursor = document.getElementById('cursor');
     document.addEventListener('mousemove', e => {
       cursor.style.left = e.clientX + 'px';
@@ -329,23 +315,19 @@
       el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
     });
 
-    // Scroll reveal
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }});
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal-up, .reveal-line').forEach(el => obs.observe(el));
 
-    // Navbar
     const nav = document.querySelector('.nav');
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60));
 
-    // Hamburger
     const hb = document.getElementById('hamburger');
     const mm = document.getElementById('mobileMenu');
     hb.addEventListener('click', () => { hb.classList.toggle('open'); mm.classList.toggle('open'); });
     document.querySelectorAll('.ml').forEach(l => l.addEventListener('click', () => { hb.classList.remove('open'); mm.classList.remove('open'); }));
 
-    // Animate proficiency bars on scroll
     const barObs = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (e.isIntersecting) {
